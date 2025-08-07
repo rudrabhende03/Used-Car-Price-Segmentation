@@ -1,1 +1,57 @@
-# Used-Car-Price-Segmentation
+# 🚗 Used Car Price Prediction – India Market
+
+This project explores and models pricing trends in the Indian used car market using a dataset of nearly 15,000 listings. It combines **data engineering**, **data cleaning**, **SQL ETL**, **Power BI dashboards**, and a **machine learning regression model** to predict the resale value of a vehicle based on features such as brand, model, age, kilometers driven, fuel type, and ownership.
+
+---
+
+## 📦 Dataset Overview
+
+- **Source**: Collected from Indian used car listings
+- **Size**: ~15,000 entries, 11 attributes
+- **Features**:
+  - `Brand`, `Model`, `Year`, `Age`
+  - `kmDriven`, `FuelType`, `Transmission`, `Owner`
+  - `PostedDate`, `AskPrice`, `AdditionalInfo`
+
+---
+
+## 🛠️ Project Highlights
+
+### 🔄 ETL Pipeline
+- Cleaned raw data (handled ₹ symbols, commas, "km" units)
+- Converted to proper numeric types (`ask_price`, `distance_travelled_km`)
+- Loaded into **PostgreSQL** using Python + SQLAlchemy
+
+### 📊 Power BI Dashboard
+- Created a dynamic dashboard to explore:
+  - Brand & model performance hierarchy
+  - Fuel type distribution
+  - Transmission preferences
+  - Price vs. Age & Distance correlation
+- Included custom KPIs for market insights
+
+### 🤖 Machine Learning Model
+- Feature engineering using one-hot encoding
+- Trained a **Linear Regression** model on cleaned data
+- Evaluation Metrics:
+  - R² score
+  - MAE (Mean Absolute Error)
+  - RMSE (Root Mean Squared Error)
+
+---
+
+## 📂 File Structure
+
+Used_Cars_Price_Prediction
+├── used_cars_dataset_v2.csv # Raw dataset
+├── used_cars_cleaned.csv # Cleaned dataset (numeric & standardized)
+├── clean_used_cars.py # Script to clean and preprocess raw data
+├── etl_used_cars.py # Load cleaned data to PostgreSQL
+├── price_predictor.py # Model training and evaluation script
+├── requirements.txt # Python dependencies
+├── README.md # Project documentation
+
+##📊 MODEL EVALUATION
+R² Score: 0.6906
+MAE (₹): 304,241
+RMSE (₹): 674,834,105,868
