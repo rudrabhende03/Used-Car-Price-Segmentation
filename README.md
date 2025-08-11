@@ -49,6 +49,7 @@ Used_Cars_Price_Prediction <br />
 ├── etl_used_cars.py # Load cleaned data to PostgreSQL <br />
 ├── price_predictor.py # Model training and evaluation script <br />
 ├── requirements.txt # Python dependencies <br />
+├── Used_Cars_Dashboards.pdf # Power BI Dashboard <br />
 ├── README.md # Project documentation
 
 ##📊 MODEL EVALUATION <br />
