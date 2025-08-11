@@ -42,16 +42,16 @@ This project explores and models pricing trends in the Indian used car market us
 
 ## 📂 File Structure
 
-Used_Cars_Price_Prediction
-├── used_cars_dataset_v2.csv # Raw dataset
-├── used_cars_cleaned.csv # Cleaned dataset (numeric & standardized)
-├── clean_used_cars.py # Script to clean and preprocess raw data
-├── etl_used_cars.py # Load cleaned data to PostgreSQL
-├── price_predictor.py # Model training and evaluation script
-├── requirements.txt # Python dependencies
+Used_Cars_Price_Prediction <br />
+├── used_cars_dataset_v2.csv # Raw dataset <br />
+├── used_cars_cleaned.csv # Cleaned dataset (numeric & standardized) <br />
+├── clean_used_cars.py # Script to clean and preprocess raw data <br />
+├── etl_used_cars.py # Load cleaned data to PostgreSQL <br />
+├── price_predictor.py # Model training and evaluation script <br />
+├── requirements.txt # Python dependencies <br />
 ├── README.md # Project documentation
 
-##📊 MODEL EVALUATION
-R² Score: 0.6906
-MAE (₹): 304,241
+##📊 MODEL EVALUATION <br />
+R² Score: 0.6906 <br />
+MAE (₹): 304,241 <br />
 RMSE (₹): 674,834,105,868
